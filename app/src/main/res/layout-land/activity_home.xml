@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+    <!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="187dp"-->
+<!--        android:layout_height="195dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="212dp"-->
+<!--        android:layout_marginEnd="12dp"-->
+<!--        android:layout_marginBottom="322dp"-->
+<!--        app:cardBackgroundColor="@color/white"-->
+<!--        app:cardCornerRadius="20dp"-->
+<!--        app:cardElevation="10dp"-->
+<!--        app:cardMaxElevation="12dp"-->
+<!--        app:cardPreventCornerOverlap="true"-->
+<!--        app:cardUseCompatPadding="true">-->
+
+<!--        <ImageView-->
+
+<!--            android:layout_width="82dp"-->
+<!--            android:layout_height="57dp"-->
+<!--            android:layout_gravity="bottom|center"-->
+<!--            android:src="@drawable/vezbe" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/drugi"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="57dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Tvoj trener"-->
+<!--            android:textColor="#13F3DD"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/gore"
+        android:layout_width="379dp"
+        android:layout_height="131dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="11dp"
+        app:cardBackgroundColor="#13F3DD"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Dobrodosli na nasu app,"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="0dp"
+            android:text="nesto"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/levo"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gore"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="59dp"
+        android:layout_toStartOf="@+id/desno"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+
+        <ImageView
+
+            android:layout_width="84dp"
+            android:layout_height="63dp"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/fitness" />
+
+        <TextView
+            android:id="@+id/prvi"
+            android:layout_width="120dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Teretane u Novom Sadu"
+            android:textColor="#13F3DD"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/desno"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gore"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="60dp"
+        android:layout_toStartOf="@+id/dole"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+
+        <ImageView
+
+            android:layout_width="96dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/nutrition" />
+
+        <TextView
+            android:id="@+id/treci"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="      Tvoj nutricionista"
+            android:textColor="#13F3DD"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dole"
+        android:layout_width="190dp"
+        android:layout_height="189dp"
+        android:layout_below="@+id/gore"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="60dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+
+        <ImageView
+
+            android:layout_width="52dp"
+            android:layout_height="65dp"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/cetvrti"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Tvoj profil"
+            android:textColor="#13F3DD"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

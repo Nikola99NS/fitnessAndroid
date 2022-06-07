@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout-land/activity_gym.xml" value="0.264" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout-land/activity_home.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout-land/activity_info.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout-land/activity_komentar.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout-land/activity_main.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout-land/activity_teretane_list.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout-land/activity_trener_item.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout-land/activity_treneri_list.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout-land/activity_tvoj_nutrucionista.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout-w600dp/activity_main.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_gym.xml" value="0.4" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_info.xml" value="0.4" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_komentar.xml" value="0.264" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_map.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_teretana.xml" value="0.15260416666666668" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_teretane_list.xml" value="0.264" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_trener_item.xml" value="0.264" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_treneri.xml" value="0.264" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_treneri_list.xml" value="0.2" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_tvoj_nutrucionista.xml" value="0.4" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_tvoj_profil.xml" value="0.2864583333333333" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_tvoj_trener.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_vesti.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_web_view.xml" value="0.176" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/activity_zakazi_tr.xml" value="0.264" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/content_komentar.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/entertainmentfragment.xml" value="0.13645833333333332" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/fragment_a.xml" value="0.13697916666666668" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/fragment_a_list.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/fragment_first.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/fragment_second.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/healthfragment.xml" value="0.13645833333333332" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/homeFragment.xml" value="0.13645833333333332" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/homefragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/komentar_item.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/layout_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/list_item.xml" value="0.1" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/proba.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/sciencefragment.xml" value="0.13645833333333332" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/sportsFragment.xml" value="0.13645833333333332" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/sportsfragment.xml" value="0.13645833333333332" />
+        <entry key="..\:/Users/Think/AndroidStudioProjects/GymAndLifestyle/app/src/main/res/layout/technologyfragment.xml" value="0.13645833333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
