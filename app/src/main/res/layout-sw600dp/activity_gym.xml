@@ -8,6 +8,22 @@
     tools:context=".GymActivity">
 
 
+    <RatingBar
+        android:id="@+id/osoblje"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:numStars="10"
+        android:progressTint="#8685ef"
+        android:stepSize="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/prostorije"
+        app:layout_constraintEnd_toEndOf="@+id/prostorije"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
     <!--    <TextView-->
 <!--        android:id="@+id/gymName"-->
 <!--        android:layout_width="wrap_content"-->
@@ -23,38 +39,23 @@
 <!--        app:layout_constraintVertical_bias="0.516"-->
 <!--        tools:ignore="MissingConstraints" />-->
 
-    <RatingBar
-        android:id="@+id/osoblje"
-        style="?android:attr/ratingBarStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:isIndicator="false"
-        android:numStars="10"
-        android:progressTint="#8685ef"
-        android:stepSize="0.5"
-        app:layout_constraintBottom_toTopOf="@+id/prostorije"
-        app:layout_constraintEnd_toEndOf="@+id/prostorije"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView10" />
-
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/gymImg"
-        android:layout_width="147dp"
-        android:layout_height="144dp"
+        android:layout_width="297dp"
+        android:layout_height="315dp"
         android:src="@drawable/cr7"
-        app:layout_constraintBottom_toTopOf="@+id/opremljenost"
+        app:layout_constraintBottom_toTopOf="@+id/text2"
         app:layout_constraintEnd_toStartOf="@+id/treneri"
-        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintHorizontal_bias="0.217"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.667"
         tools:ignore="MissingConstraints" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="221dp"
-        android:layout_height="95dp"
-        app:cardBackgroundColor="#13F3DD"
+        android:layout_width="310dp"
+        android:layout_height="110dp"
+        app:cardBackgroundColor="#03A9F4"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp"
         app:cardMaxElevation="12dp"
@@ -62,10 +63,10 @@
         app:cardUseCompatPadding="true"
         app:layout_constraintBottom_toTopOf="@+id/gymImg"
         app:layout_constraintEnd_toStartOf="@+id/mapa"
-        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintHorizontal_bias="0.194"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.346">
 
 
         <TextView
@@ -88,20 +89,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Oceni kvalitet i usluge ove teretane"
-        android:textSize="20dp"
+        android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/text3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.94" />
+        app:layout_constraintVertical_bias="0.834" />
 
     <TextView
         android:id="@+id/text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Opremljenost"
-        android:textSize="20dp"
+        android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="@+id/textView10"
         app:layout_constraintHorizontal_bias="0.0"
@@ -124,15 +125,15 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/text3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.882" />
+        app:layout_constraintVertical_bias="0.924" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="84dp"
-        android:layout_height="25dp"
+        android:layout_width="148dp"
+        android:layout_height="42dp"
         android:layout_marginTop="40dp"
         android:text="Osoblje"
-        android:textSize="20dp"
+        android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="@+id/textView11"
         app:layout_constraintHorizontal_bias="0.0"
@@ -145,7 +146,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Prostorije"
-        android:textSize="20dp"
+        android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="@+id/textView12"
         app:layout_constraintHorizontal_bias="0.0"
@@ -153,13 +154,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.946" />
 
-
     <RatingBar
         android:id="@+id/prostorije"
         style="?android:attr/ratingBarStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
         android:isIndicator="false"
         android:numStars="10"
         android:progressTint="#8685ef"
@@ -167,92 +166,99 @@
         app:layout_constraintBottom_toTopOf="@+id/higijena"
         app:layout_constraintEnd_toEndOf="@+id/higijena"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView11" />
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937" />
+
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="86dp"
-        android:layout_height="28dp"
+        android:layout_width="142dp"
+        android:layout_height="45dp"
         android:text="Higijena"
-        android:textSize="20dp"
+        android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/komentar"
-        app:layout_constraintEnd_toEndOf="@+id/komentar"
-        app:layout_constraintHorizontal_bias="0.227"
-        app:layout_constraintStart_toStartOf="@+id/komentar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.924" />
+        app:layout_constraintVertical_bias="0.872" />
 
     <RatingBar
         android:id="@+id/higijena"
         style="?android:attr/ratingBarStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
         android:isIndicator="false"
         android:numStars="10"
         android:progressTint="#8685ef"
         android:stepSize="0.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.422"
-        app:layout_constraintStart_toEndOf="@+id/textView12" />
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#13F3DD"
+        android:layout_width="148dp"
+        android:layout_height="78dp"
+        android:background="#03A9F4"
         android:text="Pošalji"
+        android:textSize="16sp"
         android:textColor="#ffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.224"
-        app:layout_constraintStart_toEndOf="@+id/osoblje"
+        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.931" />
+        app:layout_constraintVertical_bias="0.876" />
 
     <Button
         android:id="@+id/komentar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#13F3DD"
+        android:layout_width="150dp"
+        android:layout_height="81dp"
+        android:background="#03A9F4
+"
         android:text="Dodaj komentar"
         android:textColor="@color/white"
-        android:textSize="10dp"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.955" />
+        app:layout_constraintVertical_bias="0.925" />
 
     <Button
         android:id="@+id/mapa"
-        android:layout_width="106dp"
-        android:layout_height="48dp"
-        android:background="#13F3DD"
+        android:layout_width="147dp"
+        android:layout_height="79dp"
+        android:background="#03A9F4"
         android:text="Lokacija"
-        android:textColor="#795548"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/treneri"
         app:layout_constraintEnd_toEndOf="@+id/treneri"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/treneri"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.487" />
 
     <Button
         android:id="@+id/treneri"
-        android:layout_width="105dp"
-        android:layout_height="47dp"
-        android:background="#13F3DD"
+        android:layout_width="151dp"
+        android:layout_height="85dp"
+        android:background="#03A9F4"
         android:text="Treneri"
-        android:textColor="#795548"
+        android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintHorizontal_bias="0.902"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.244" />
+        app:layout_constraintVertical_bias="0.335" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

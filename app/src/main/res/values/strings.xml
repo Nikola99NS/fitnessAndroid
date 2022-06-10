@@ -9,6 +9,15 @@
     <string name="previous">Previous</string>
     <string name="register">REGISTER</string>
     <string name="goToSignIn">Existing user! Go to sign in page!</string>
+    <string name='vestiNaslov'>Vesti</string>
+    <string name="home">Home</string>
+    <string name="sports">Sports</string>
+    <string name="health">Health</string>
+    <string name="science">Sports</string>
+    <string name="entertainments">Entertainments</string>
+
+
+
 
 
 </resources>
