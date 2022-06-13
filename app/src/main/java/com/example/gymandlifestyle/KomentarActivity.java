@@ -32,6 +32,8 @@ public class KomentarActivity extends AppCompatActivity {
         binding = ActivityKomentarBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
+
         DB = new DBHelper3(this);
 
         komentar = (EditText) findViewById(R.id.komentar);
@@ -45,7 +47,7 @@ public class KomentarActivity extends AppCompatActivity {
             binding.gym.setText(gym);
             String username = intent.getStringExtra("user");
 
-//            izlistaj(gym,username,binding);
+            izlistaj(gym,username,binding);
 
             dodaj.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -73,6 +75,7 @@ public class KomentarActivity extends AppCompatActivity {
                     Komentar comm = new Komentar(uk);
                     komentariArrayList.add(comm);
                 }
+
                 ListAdapterKom listAdapter = new ListAdapterKom(KomentarActivity.this, komentariArrayList);
                 binding.komentari.setAdapter(listAdapter);
             }

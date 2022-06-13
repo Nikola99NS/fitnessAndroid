@@ -20,7 +20,14 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.example.gymandlifestyle.databinding.ActivityMapBinding;
 
+import java.util.AbstractMap;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+import classes.Komentar;
 
 public class MapActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -28,7 +35,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
 
     private String gym="";
 
-//    private ActivityMapBinding binding;
+
+
+    //    private ActivityMapBinding binding;
 //
 //    List<Address> listGeoCoder;
     private static final int LOCATION_PERMISSION_CODE = 101;
