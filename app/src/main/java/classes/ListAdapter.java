@@ -22,6 +22,7 @@ public class ListAdapter extends ArrayAdapter<Teretana> {
     }
 
 
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent)  {
@@ -45,5 +46,9 @@ public class ListAdapter extends ArrayAdapter<Teretana> {
 
 
         return convertView;
+    }
+
+    public void filterList() {
+        notifyDataSetChanged();
     }
 }

@@ -6,12 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".TeretaneListActivity">
 
+    <EditText
+
+        android:id="@+id/searchGym"
+        android:hint="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
     <ListView
         android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="-29dp"
+        android:layout_width="411dp"
+        android:layout_height="670dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:ignore="MissingConstraints,UnknownId"
         tools:listitem="@layout/list_item" />
 
 
