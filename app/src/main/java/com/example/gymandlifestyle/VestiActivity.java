@@ -3,8 +3,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
@@ -12,30 +18,35 @@ import com.google.android.material.tabs.TabLayout;
 import classes.PagerAdapter;
 
 
-public class VestiActivity extends AppCompatActivity {
+public class VestiActivity extends AppCompatActivity implements SensorEventListener {
 
     TabLayout tabLayout;
-    TabItem mhome, mscience, mhealth, mtech, mentertainment, msports;
+    TabItem mhome, mscience, mhealth, mentertainment, msports;
     PagerAdapter pagerAdapter;
     Toolbar mtoolbar;
+
+    private TextView temp;
+    private SensorManager sensorManager;
+    private Sensor tempSensor;
+    private Boolean isTemperatureSensorAvailable;
+
+
 
     String api = "d5b01d23a8ef460c813a1e21908c5c93";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.i("vaznesenjeVesti","nesto");
-//
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vesti);
-//
+
         mtoolbar=findViewById(R.id.toolbar);
         setSupportActionBar(mtoolbar);
-//
+
         mhome = findViewById(R.id.home);
         mscience = findViewById(R.id.science);
         msports = findViewById(R.id.sports);
-//        mtech = findViewById(R.id.technology);
         mentertainment = findViewById(R.id.entertaiment);
         mhealth = findViewById(R.id.health);
 
@@ -45,7 +56,17 @@ public class VestiActivity extends AppCompatActivity {
         pagerAdapter = new PagerAdapter(getSupportFragmentManager(), 6);
         viewPager.setAdapter(pagerAdapter);
 
-        Log.i("vaznesenjeVesti","opaaa");
+        temp = findViewById(R.id.temperatura);
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+
+        if(sensorManager.getDefaultSensor(Sensor.TYPE_AMBIENT_TEMPERATURE)!=null){
+
+            tempSensor=sensorManager.getDefaultSensor(Sensor.TYPE_AMBIENT_TEMPERATURE);
+            isTemperatureSensorAvailable = true;
+        }else{
+            temp.setText("Temperature sensor is not available");
+            isTemperatureSensorAvailable = false;
+        }
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -68,8 +89,33 @@ public class VestiActivity extends AppCompatActivity {
         });
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+    }
 
+    @Override
+    public void onSensorChanged(SensorEvent sensorEvent) {
 
+        temp.setText("Novi Sad "  + sensorEvent.values[0]+ " °C");
+    }
 
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(isTemperatureSensorAvailable){
+            sensorManager.registerListener(this, tempSensor, SensorManager.SENSOR_DELAY_NORMAL);
+
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if(isTemperatureSensorAvailable){
+            sensorManager.unregisterListener(this);
+        }
     }
 }
